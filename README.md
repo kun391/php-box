@@ -10,8 +10,8 @@
 Building the virtual machine is this easy:
 
 ```sh
-host $ git clone https://github.com/rails/rails-dev-box.git
-host $ cd rails-dev-box
+host $ git clone https://github.com/huytbt/php56-node-yeoman-dev-box.git
+host $ cd php56-node-yeoman-dev-box
 host $ vagrant up
 ```
 
