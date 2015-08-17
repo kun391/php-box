@@ -32,9 +32,12 @@ install MySQL mysql-server mysql-client
 
 # install node & npm & yeoman
 install Node nodejs nodejs-legacy npm
-npm install --global npm@latest
-npm install -g grunt-cli bower yo generator-karma generator-angular
-chmod g+rwx /root /root/.config /root/.config/configstore
+npm install --global npm@latest 2>&1
+npm install -g grunt-cli bower yo generator-karma generator-angular 2>&1
+chmod g+rwx /root /root/.config /root/.config/configstore 2>&1
+
+# install composer
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer 2>&1
 
 # Needed for docs generation.
 update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
