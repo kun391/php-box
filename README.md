@@ -27,7 +27,9 @@ host $ vagrant ssh
 
 * Git
 * PHP 5.6
+* Composer
 * Apache 2
 * SQLite3, MySql
 * Nodejs, NPM
+* Webmin
 * [Yeoman](http://yeoman.io/)
