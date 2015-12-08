@@ -30,12 +30,6 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password password roo
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 install MySQL mysql-server mysql-client
 
-# install node & npm & yeoman
-install Node nodejs nodejs-legacy npm
-npm install --global npm@latest 2>&1
-npm install -g grunt-cli bower yo generator-karma generator-angular 2>&1
-chmod g+rwx /root /root/.config /root/.config/configstore 2>&1
-
 # install composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer 2>&1
 
